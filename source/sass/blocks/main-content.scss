@@ -13,10 +13,10 @@
   transform: translate(8.5%, 59%);
   background-image:
     image-set(
-      url("../../img/clouds/clouds-1-desktop@1x.webp") 1x type("image/webp"),
-      url("../../img/clouds/clouds-1-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/clouds/clouds-1-desktop@1x.png") 1x type("image/png"),
-      url("../../img/clouds/clouds-1-desktop@2x.png") 2x type("image/png")
+      url("@/img/clouds/clouds-1-desktop@1x.webp") 1x type("image/webp"),
+      url("@/img/clouds/clouds-1-desktop@2x.webp") 2x type("image/webp"),
+      url("@/img/clouds/clouds-1-desktop@1x.png") 1x type("image/png"),
+      url("@/img/clouds/clouds-1-desktop@2x.png") 2x type("image/png")
     );
   background-repeat: no-repeat;
   background-size: cover;

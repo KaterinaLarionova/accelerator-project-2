@@ -250,10 +250,10 @@
   min-height: 568px;
   background-image:
     image-set(
-      url("../../img/hero-slider/kamchatka-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/hero-slider/kamchatka-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/hero-slider/kamchatka-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/hero-slider/kamchatka-mobile@2x.jpg") 2x type("image/jpg")
+      url("@/img/hero-slider/kamchatka-mobile@1x.webp") 1x type("image/webp"),
+      url("@/img/hero-slider/kamchatka-mobile@2x.webp") 2x type("image/webp"),
+      url("@/img/hero-slider/kamchatka-mobile@1x.jpg") 1x type("image/jpg"),
+      url("@/img/hero-slider/kamchatka-mobile@2x.jpg") 2x type("image/jpg")
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -272,10 +272,10 @@
     min-height: 1034px;
     background-image:
       image-set(
-        url("../../img/hero-slider/kamchatka-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/kamchatka-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/kamchatka-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/kamchatka-tablet@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/kamchatka-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/kamchatka-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/kamchatka-tablet@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/kamchatka-tablet@2x.jpg") 2x type("image/jpg")
       );
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,10 +288,10 @@
     background-position: bottom, 70%;
     background-image:
       image-set(
-        url("../../img/hero-slider/kamchatka-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/kamchatka-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/kamchatka-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/kamchatka-tablet@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/kamchatka-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/kamchatka-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/kamchatka-tablet@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/kamchatka-tablet@2x.jpg") 2x type("image/jpg")
       );
   }
 
@@ -300,10 +300,10 @@
     min-height: 800px;
     background-image:
       image-set(
-        url("../../img/hero-slider/kamchatka-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/kamchatka-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/kamchatka-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/kamchatka-desktop@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/kamchatka-desktop@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/kamchatka-desktop@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/kamchatka-desktop@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/kamchatka-desktop@2x.jpg") 2x type("image/jpg")
       );
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -347,10 +347,10 @@
     height: 359px;
     background-image:
       image-set(
-        url("../../img/photo-cards/photo-cards-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/photo-cards/photo-cards-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/photo-cards/photo-cards-tablet@1x.png") 1x type("image/png"),
-        url("../../img/photo-cards/photo-cards-tablet@2x.png") 2x type("image/png")
+        url("@/img/photo-cards/photo-cards-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/photo-cards/photo-cards-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/photo-cards/photo-cards-tablet@1x.png") 1x type("image/png"),
+        url("@/img/photo-cards/photo-cards-tablet@2x.png") 2x type("image/png")
       );
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,10 +362,10 @@
     height: 456px;
     background-image:
       image-set(
-        url("../../img/photo-cards/photo-cards-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/photo-cards/photo-cards-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/photo-cards/photo-cards-desktop@1x.png") 1x type("image/png"),
-        url("../../img/photo-cards/photo-cards-desktop@2x.png") 2x type("image/png")
+        url("@/img/photo-cards/photo-cards-desktop@1x.webp") 1x type("image/webp"),
+        url("@/img/photo-cards/photo-cards-desktop@2x.webp") 2x type("image/webp"),
+        url("@/img/photo-cards/photo-cards-desktop@1x.png") 1x type("image/png"),
+        url("@/img/photo-cards/photo-cards-desktop@2x.png") 2x type("image/png")
       );
     background-repeat: no-repeat;
     background-size: cover;
@@ -403,10 +403,10 @@
   min-height: 568px;
   background-image:
     image-set(
-      url("../../img/hero-slider/altai-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/hero-slider/altai-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/hero-slider/altai-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/hero-slider/altai-mobile@2x.jpg") 2x type("image/jpg")
+      url("@/img/hero-slider/altai-mobile@1x.webp") 1x type("image/webp"),
+      url("@/img/hero-slider/altai-mobile@2x.webp") 2x type("image/webp"),
+      url("@/img/hero-slider/altai-mobile@1x.jpg") 1x type("image/jpg"),
+      url("@/img/hero-slider/altai-mobile@2x.jpg") 2x type("image/jpg")
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,10 +425,10 @@
     min-height: 1034px;
     background-image:
       image-set(
-        url("../../img/hero-slider/altai-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/altai-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/altai-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/altai-tablet@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/altai-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/altai-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/altai-tablet@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/altai-tablet@2x.jpg") 2x type("image/jpg")
       );
     background-repeat: no-repeat;
     background-size: cover;
@@ -441,10 +441,10 @@
     background-position: bottom, 70%;
     background-image:
       image-set(
-        url("../../img/hero-slider/altai-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/altai-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/altai-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/altai-tablet@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/altai-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/altai-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/altai-tablet@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/altai-tablet@2x.jpg") 2x type("image/jpg")
       );
   }
 
@@ -453,10 +453,10 @@
     min-height: 800px;
     background-image:
       image-set(
-        url("../../img/hero-slider/altai-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/altai-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/altai-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/altai-desktop@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/altai-desktop@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/altai-desktop@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/altai-desktop@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/altai-desktop@2x.jpg") 2x type("image/jpg")
       );
     background-repeat: no-repeat;
     background-size: 100% auto;

@@ -3,10 +3,10 @@
   background-color: $hover-color;
   background-image:
     image-set(
-      url("../../img/form/form_mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/form/form_mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/form/form_mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/form/form_mobile@2x.jpg") 2x type("image/jpg"));
+      url("@/img/form/form_mobile@1x.webp") 1x type("image/webp"),
+      url("@/img/form/form_mobile@2x.webp") 2x type("image/webp"),
+      url("@/img/form/form_mobile@1x.jpg") 1x type("image/jpg"),
+      url("@/img/form/form_mobile@2x.jpg") 2x type("image/jpg"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -14,19 +14,19 @@
   @media (min-width: $tablet-width) {
     padding: 187px 10px 183px;
     background-image:
-      image-set(url("../../img/form/form_tablet@1x.webp") 1x type("image/webp"),
-      url("../../img/form/form_tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/form/form_tablet@1x.jpg") 1x type("image/jpg"),
-      url("../../img/form/form_tablet@2x.jpg") 2x type("image/jpg"));
+      image-set(url("@/img/form/form_tablet@1x.webp") 1x type("image/webp"),
+      url("@/img/form/form_tablet@2x.webp") 2x type("image/webp"),
+      url("@/img/form/form_tablet@1x.jpg") 1x type("image/jpg"),
+      url("@/img/form/form_tablet@2x.jpg") 2x type("image/jpg"));
   }
 
   @media (min-width: $desktop-width) {
     padding: 296px 10px 292px;
     background-image:
-      image-set(url("../../img/form/form_desktop@1x.webp") 1x type("image/webp"),
-      url("../../img/form/form_desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/form/form_desktop@1x.jpg") 1x type("image/jpg"),
-      url("../../img/form/form_desktop@2x.jpg") 2x type("image/jpg"));
+      image-set(url("@/img/form/form_desktop@1x.webp") 1x type("image/webp"),
+      url("@/img/form/form_desktop@2x.webp") 2x type("image/webp"),
+      url("@/img/form/form_desktop@1x.jpg") 1x type("image/jpg"),
+      url("@/img/form/form_desktop@2x.jpg") 2x type("image/jpg"));
   }
 }
 
