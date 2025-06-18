@@ -1,0 +1,136 @@
+.training {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+}
+
+.training__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  position: relative;
+  margin: 17px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    width: 400px;
+    margin: 20px 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 100%;
+    width: 542px;
+    margin: 23px 0 32px;
+  }
+}
+
+.training__title::after {
+  @include duplicate-title;
+}
+
+.training__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.training__container p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    margin: 0 0 58px;
+  }
+}
+
+.training__subtitle {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  margin: 0 0 22px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 3px 0 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 100%;
+    margin: 4px 0 16px;
+  }
+}
+
+.training__controls {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 7px;
+  }
+}
+
+.training__button {
+  @include button-swiper-nav;
+}
+
+.training__button--next::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-arrow-view");
+  background-color: $light-color;
+  mask-repeat: no-repeat;
+}
+
+.training__button--prev::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 6px;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-arrow-view");
+  background-color: $light-color;
+  mask-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.training__list {
+  display: flex;
+  margin: 0 0 26px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 57px;
+  }
+}

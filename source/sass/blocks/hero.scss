@@ -1,0 +1,565 @@
+.hero__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__item {
+  padding-top: 40px;
+  padding-bottom: 56px;
+  color: $light-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 200px;
+    padding-bottom: 60px;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  margin: 0 auto;
+  min-height: 472px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 934px;
+    padding: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    min-height: 520px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+.hero__item--caucasus {
+  display: block;
+  min-height: 568px;
+  background-image:
+    image-set(
+      url("../../img/hero-slider/caucasus-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/hero-slider/caucasus-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/hero-slider/caucasus-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/hero-slider/caucasus-mobile@2x.jpg") 2x type("image/jpg")
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media (width >= 452px) {
+    min-height: 800px;
+  }
+
+  @media (width >= 525px) {
+    min-height: 900px;
+  }
+
+  @media (width >= 526px) and (width <= 1023px) {
+    display: block;
+    min-height: 1034px;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/caucasus-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/caucasus-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/caucasus-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/caucasus-tablet@2x.jpg") 2x type("image/jpg")
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+  }
+
+  @media (width >= 1024px) and (width <= 1439px) {
+    min-height: 950px;
+    background-size: cover;
+    background-position: bottom, 70%;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/caucasus-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/caucasus-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/caucasus-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/caucasus-tablet@2x.jpg") 2x type("image/jpg")
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/caucasus-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/caucasus-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/caucasus-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/caucasus-desktop@2x.jpg") 2x type("image/jpg")
+      );
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom, 70%;
+  }
+}
+
+.hero__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.hero__content h2 {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    line-height: 77px;
+    margin: 0 0 23px;
+  }
+}
+
+.hero__content p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0 0 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0 0 35px;
+    padding: 0 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 10px 0 0;
+    width: 430px;
+    margin-bottom: 37px;
+  }
+}
+
+.hero__button {
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 500;
+  color: $light-color;
+  background-color: $accent-color;
+  padding: 10px;
+  width: 180px;
+  min-height: 56px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
+}
+
+.hero__button--disabled {
+  background-color: $disabled-color;
+  color: $light-color;
+  outline: none;
+  border: none;
+  cursor: not-allowed;
+}
+
+.hero__details {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 349px;
+    justify-content: space-between;
+    margin: 0 0 20px;
+    color: $light-color;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+.hero__time {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 8px;
+  width: 155px;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid rgba($light-color, 0.5);
+}
+
+.hero__time::before {
+  content: "";
+  display: block;
+  mask-size: cover;
+  mask-position: center;
+  background-color: $light-color;
+  mask-image: url("/__spritemap#sprite-moon-view");
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  mask-repeat: no-repeat;
+}
+
+.hero__level {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 8px;
+  width: 184px;
+  min-height: 44px;
+  padding: 7px 19px;
+  border: 1px solid rgba($light-color, 0.5);
+}
+
+.hero__level::before {
+  content: "";
+  display: block;
+  mask-size: cover;
+  mask-position: center;
+  background-color: $light-color;
+  mask-image: url("/__spritemap#sprite-level-view");
+  width: 12px;
+  height: 12px;
+}
+
+.hero__item--kamchatka {
+  display: block;
+  min-height: 568px;
+  background-image:
+    image-set(
+      url("../../img/hero-slider/kamchatka-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/hero-slider/kamchatka-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/hero-slider/kamchatka-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/hero-slider/kamchatka-mobile@2x.jpg") 2x type("image/jpg")
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media (width >= 452px) {
+    min-height: 800px;
+  }
+
+  @media (width >= 525px) {
+    min-height: 900px;
+  }
+
+  @media (width >= 526px) and (width <= 1023px) {
+    display: block;
+    min-height: 1034px;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/kamchatka-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/kamchatka-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/kamchatka-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/kamchatka-tablet@2x.jpg") 2x type("image/jpg")
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+  }
+
+  @media (width >= 1024px) and (width <= 1439px) {
+    min-height: 950px;
+    background-size: cover;
+    background-position: bottom, 70%;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/kamchatka-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/kamchatka-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/kamchatka-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/kamchatka-tablet@2x.jpg") 2x type("image/jpg")
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+    min-height: 800px;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/kamchatka-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/kamchatka-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/kamchatka-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/kamchatka-desktop@2x.jpg") 2x type("image/jpg")
+      );
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top, 70%;
+  }
+}
+
+.hero__wrapper--kamchatka {
+  justify-content: flex-start;
+}
+
+.hero__content--kamchatka {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 806px;
+    padding-top: 47px;
+  }
+}
+
+.hero__content--kamchatka h2 {
+  margin: 95px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 92px 0 25px;
+    z-index: 2;
+  }
+}
+
+.hero__content--kamchatka::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 441px;
+    height: 359px;
+    background-image:
+      image-set(
+        url("../../img/photo-cards/photo-cards-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/photo-cards/photo-cards-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/photo-cards/photo-cards-tablet@1x.png") 1x type("image/png"),
+        url("../../img/photo-cards/photo-cards-tablet@2x.png") 2x type("image/png")
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-50%, 66%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 411px;
+    height: 456px;
+    background-image:
+      image-set(
+        url("../../img/photo-cards/photo-cards-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/photo-cards/photo-cards-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/photo-cards/photo-cards-desktop@1x.png") 1x type("image/png"),
+        url("../../img/photo-cards/photo-cards-desktop@2x.png") 2x type("image/png")
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(94%, -47%);
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.hero__content--kamchatka p {
+  @media (min-width: $tablet-width) {
+    padding: 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 470px;
+    padding: 0 9px 0 0;
+  }
+}
+
+.hero__details--kamchatka {
+  @media (min-width: $desktop-width) {
+    width: 355px;
+  }
+}
+
+.hero__time--kamchatka {
+  @media (min-width: $desktop-width) {
+    width: 161px;
+  }
+}
+
+.hero__item--altai {
+  display: block;
+  min-height: 568px;
+  background-image:
+    image-set(
+      url("../../img/hero-slider/altai-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/hero-slider/altai-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/hero-slider/altai-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/hero-slider/altai-mobile@2x.jpg") 2x type("image/jpg")
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  @media (width >= 452px) {
+    min-height: 800px;
+  }
+
+  @media (width >= 525px) {
+    min-height: 900px;
+  }
+
+  @media (width >= 526px) and (width <= 1023px) {
+    display: block;
+    min-height: 1034px;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/altai-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/altai-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/altai-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/altai-tablet@2x.jpg") 2x type("image/jpg")
+      );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+  }
+
+  @media (width >= 1024px) and (width <= 1439px) {
+    min-height: 950px;
+    background-size: cover;
+    background-position: bottom, 70%;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/altai-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/altai-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/altai-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/altai-tablet@2x.jpg") 2x type("image/jpg")
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 200px;
+    min-height: 800px;
+    background-image:
+      image-set(
+        url("../../img/hero-slider/altai-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/hero-slider/altai-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/hero-slider/altai-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/hero-slider/altai-desktop@2x.jpg") 2x type("image/jpg")
+      );
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top, 70%;
+  }
+}
+
+.hero__content--altai {
+  @media (min-width: $desktop-width) {
+    width: 944px;
+  }
+}
+
+.hero__content--altai p {
+  @media (min-width: $tablet-width) {
+    padding: 0 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 464px;
+    padding: 0;
+  }
+}
+
+.hero__details--altai {
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
+}
+
+.hero__time--altai {
+  @media (min-width: $desktop-width) {
+    width: 156px;
+  }
+}
+
+.hero__level--altai {
+  @media (min-width: $desktop-width) {
+    width: 174px;
+  }
+}
+
+.hero__pagination {
+  position: absolute;
+  width: 88px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: calc((100vw - 1440px) / 2 + 70px);
+    bottom: 92px;
+    left: auto;
+  }
+}
+
+.pagination__item {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $light-color;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+    border: 1px solid $light-color;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $light-color;
+    box-shadow: 0 0 0 2px rgba($light-color, 0.5);
+  }
+
+  &:active {
+    background-color: rgba($light-color, 0.5);
+    border: 1px solid $light-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.pagination__item--active {
+  background-color: $light-color;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
+

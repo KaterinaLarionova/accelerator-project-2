@@ -1,0 +1,48 @@
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.logo-footer__link {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-footer__image {
+  display: block;
+  height: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -2px 0 0;
+  }
+}

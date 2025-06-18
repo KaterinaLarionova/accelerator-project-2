@@ -1,0 +1,71 @@
+@mixin duplicate-title {
+  content: attr(data-title);
+  position: absolute;
+  z-index: -1;
+  font-weight: 800;
+  text-align: left;
+  vertical-align: middle;
+  color: rgba($dark-gray, 0.03);
+  font-size: 26px;
+  line-height: 26px;
+  left: 0;
+  margin-top: -15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+@mixin button-swiper-nav {
+  width: 37px;
+  height: 35px;
+  background-color: $accent-color;
+  align-items: center;
+
+  &:hover {
+    background-color: $light-color;
+    border: 1px solid $dark-blue;
+    cursor: pointer;
+
+    &::after {
+      background-color: $dark-blue;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    background-color: $light-color;
+
+    &::after {
+      background-color: $dark-blue;
+    }
+  }
+
+  &:active {
+    background-color: $dark-blue;
+
+    &::after {
+      background-color: $light-color;
+    }
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+    cursor: default;
+    touch-action: none;
+    outline: none;
+    border: none;
+
+    &::after {
+      background-color: $light-color;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
+    gap: 30px;
+  }
+}
+
+.form__holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.3s;
+  pointer-events: none;
+  left: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba($base-color, 0.5);
+  font-weight: 400;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(-38%);
+    left: 29px;
+  }
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+  width: 258px;
+  min-height: 50px;
+  border: 1px solid rgba($accent-color, 0.1);
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba($base-color, 0.5);
+  font-weight: 400;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    outline: 1px solid $accent-color;
+    border-radius: 2px;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $dark-gray;
+    border-radius: 2px;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    border-bottom: 1px solid $disabled-color;
+  }
+
+  &:disabled::placeholder {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    min-height: 56px;
+    padding: 15px 10px 15px 30px;
+  }
+}
+
+.form__input:focus + .form__label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form__input::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.form__input:focus::placeholder {
+  opacity: 1;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba($base-color, 0.5);
+}
+
+.form__input:focus + .form__label,
+.form__input:focus-visible + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  opacity: 0;
+}
+
+.form__input--error {
+  border: 1px solid $error-color;
+}
+
+.form__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 258px;
+  min-height: 58px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 500;
+  color: $light-color;
+  background-color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    min-height: 57px;
+    padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    min-height: 56px;
+    padding: 15px;
+  }
+}

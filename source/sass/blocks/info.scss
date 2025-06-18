@@ -1,0 +1,116 @@
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 15px;
+  color: $light-color;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  width: 250px;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
+}
+
+.info__place {
+  display: flex;
+  align-items: center;
+  background-color: $accent-color;
+  width: 90px;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  padding: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 5px 8px 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    padding: 8px 4px 8px 8px;
+  }
+}
+
+.info__place::before {
+  content: "";
+  display: flex;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-pin-view");
+  background-color: $light-color;
+  mask-repeat: no-repeat;
+  width: 9px;
+  height: 12px;
+  margin-right: 6px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 9px;
+  }
+}
+
+.info__place--altai {
+  width: 85px;
+}
+
+.info__place--adygea {
+  width: 94px;
+}
+
+.info__stats {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 17px;
+}
+
+.info__days {
+  display: flex;
+  align-items: center;
+}
+
+.info__days::before {
+  content: "";
+  display: block;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-sun-view");
+  background-color: $light-color;
+  mask-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+
+  @media (min-width: $desktop-width) {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.info__nights {
+  display: flex;
+  align-items: center;
+}
+
+.info__nights::before {
+  content: "";
+  display: block;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-moon-view");
+  background-color: $light-color;
+  mask-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+}

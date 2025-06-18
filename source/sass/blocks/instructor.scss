@@ -1,0 +1,124 @@
+.instructor {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  background-color: $light-color;
+
+  @media (min-width: $tablet-width) {
+    width: 213px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.instructor__card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  min-height: 356px;
+  padding: 14px;
+  border: 1px solid rgba($accent-color, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 213px;
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    min-height: 356px;
+  }
+}
+
+.instructor__image {
+  display: block;
+  margin-bottom: 16px;
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 183px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+    height: 200px;
+  }
+}
+
+.instructor__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.instructor__info h4 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.instructor__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba($dark-gray, 0.3);
+  margin-top: -1px;
+
+  &:hover {
+    border: 1px solid $dark-gray;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    background-color: $accent-color;
+
+    &::after {
+      background-color: $light-color;
+    }
+  }
+}
+
+.instructor__link::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 8px;
+  mask-size: cover;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-image: url("/__spritemap#sprite-vk-view");
+  background-color: $dark-gray;
+  cursor: pointer;
+}
+
+.instructor__link--disabled {
+  pointer-events: none;
+  opacity: 0.3;
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.instructor__info p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}

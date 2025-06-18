@@ -1,0 +1,258 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 92px;
+  }
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  position: relative;
+  margin: 17px 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+    width: 400px;
+    margin: 20px 0 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 100%;
+    width: 542px;
+    margin: 23px 0;
+  }
+}
+
+.tours__title::after {
+  @include duplicate-title;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 45px;
+    padding-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.contacts__wrapper p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 40px;
+    width: 484px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 49px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 41px;
+    margin: 0 0 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 35px;
+    margin: 0;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+.contacts__item--phone::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-phone-view");
+  background-color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.contacts__item--mail::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 16px;
+  margin-top: 3px;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-mail-view");
+  background-color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 26px;
+    height: 19px;
+    margin-top: -5px;
+  }
+}
+
+.contacts__item--address::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 22px;
+  margin-left: 3px;
+  margin-right: 3px;
+  mask-size: cover;
+  mask-position: center;
+  mask-image: url("/__spritemap#sprite-map-point-view");
+  background-color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 22px;
+    margin: 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 19px;
+    height: 24px;
+    margin: 0 4px 5px 3px;
+  }
+}
+
+.contacts__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 8px;
+  }
+}
+
+.contacts__subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.contacts__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-style: normal;
+  color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1px;
+  }
+}
+
+.contacts__space {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin: 49px 0 0;
+  }
+}

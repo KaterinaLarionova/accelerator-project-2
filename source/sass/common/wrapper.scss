@@ -1,0 +1,19 @@
+.wrapper {
+  width: 320px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin: auto;
+  }
+}

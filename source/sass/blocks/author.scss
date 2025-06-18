@@ -1,0 +1,35 @@
+.author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 6px;
+  }
+}
+
+.author__name {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  font-style: normal;
+  margin: 6px 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 13px;
+    margin: 16px 0 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -10px 0 0 2px;
+  }
+}
+
+.author__details {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+
