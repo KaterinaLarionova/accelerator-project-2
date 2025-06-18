@@ -48,10 +48,10 @@
   min-height: 568px;
   background-image:
     image-set(
-      url("../../img/hero-slider/caucasus-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/hero-slider/caucasus-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/hero-slider/caucasus-mobile@1x.jpg") 1x type("image/jpg"),
-      url("../../img/hero-slider/caucasus-mobile@2x.jpg") 2x type("image/jpg")
+      url("@/img/hero-slider/caucasus-mobile@1x.webp") 1x type("image/webp"),
+      url("@/img/hero-slider/caucasus-mobile@2x.webp") 2x type("image/webp"),
+      url("@/img/hero-slider/caucasus-mobile@1x.jpg") 1x type("image/jpg"),
+      url("@/img/hero-slider/caucasus-mobile@2x.jpg") 2x type("image/jpg")
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,10 +70,10 @@
     min-height: 1034px;
     background-image:
       image-set(
-        url("../../img/hero-slider/caucasus-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/caucasus-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/caucasus-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/caucasus-tablet@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/caucasus-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/caucasus-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/caucasus-tablet@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/caucasus-tablet@2x.jpg") 2x type("image/jpg")
       );
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,10 +86,10 @@
     background-position: bottom, 70%;
     background-image:
       image-set(
-        url("../../img/hero-slider/caucasus-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/caucasus-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/caucasus-tablet@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/caucasus-tablet@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/caucasus-tablet@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/caucasus-tablet@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/caucasus-tablet@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/caucasus-tablet@2x.jpg") 2x type("image/jpg")
       );
   }
 
@@ -97,10 +97,10 @@
     min-height: 800px;
     background-image:
       image-set(
-        url("../../img/hero-slider/caucasus-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/hero-slider/caucasus-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/hero-slider/caucasus-desktop@1x.jpg") 1x type("image/jpg"),
-        url("../../img/hero-slider/caucasus-desktop@2x.jpg") 2x type("image/jpg")
+        url("@/img/hero-slider/caucasus-desktop@1x.webp") 1x type("image/webp"),
+        url("@/img/hero-slider/caucasus-desktop@2x.webp") 2x type("image/webp"),
+        url("@/img/hero-slider/caucasus-desktop@1x.jpg") 1x type("image/jpg"),
+        url("@/img/hero-slider/caucasus-desktop@2x.jpg") 2x type("image/jpg")
       );
     background-repeat: no-repeat;
     background-size: 100% auto;

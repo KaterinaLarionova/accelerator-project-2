@@ -69,7 +69,7 @@ export default {
   build: {
     outDir: '../dist',
   },
-  base: '/Lifetour/',
+  base: '/accelerator-project-1/',
   server: {
     port: 3000,
   },
